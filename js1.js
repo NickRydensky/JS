@@ -1,5 +1,5 @@
 let hi = confirm('будем здороваться?')
-if(hi === true){
+if(hi){ //условия и так принимает true или false нет необходимости сравнивать 
     alert('привет!')
     let name = prompt('как тебя зовут?')
     if(name.length>0){
