@@ -1,0 +1,95 @@
+*{
+   margin: 0 ;
+    box-sizing: border-box; 
+}
+.navigation{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    background-color: honeydew;
+    /* justify-content: space-around; */
+}
+.start{
+    margin-left: 310px;
+    background-color: blueviolet;
+    color: greenyellow;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+}
+.content{
+    width: 100%;
+    height: 700px;
+    background-color: indianred;
+    /* display: flex; */
+
+}
+.list{
+    width: 100%;
+    height: 40px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+
+}
+.list li{
+    width: 65px;
+    height: 25px;
+    margin-right: 30px;
+    border: 2px solid rgb(150, 118, 149);
+    background-color: rgb(112, 164, 177);;
+    color: honeydew;
+    border-radius: 15px;
+    text-align: center;
+}
+.list li:hover{
+    background-color: rgb(150, 118, 149);
+    color: rgb(250, 163, 1);
+    border: 2px solid rgb(112, 164, 177);
+    transition-duration: 0.5s;
+}
+.calc{
+    width: 200px;
+    height: 400px;
+    background-color: palegoldenrod;
+    border: 5px solid blueviolet;
+    border-radius: 30px;
+    text-align: center;
+    margin: 50px 50px;
+}
+.num1{
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+}
+.num2{
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+}
+.butt{
+    width: 90px;
+    height: 60px;
+    margin-top: 30px;
+    background-color: rgb(216, 184, 125);
+    /* border: 3px solid black; почему не работает с этой строчкой кнопка? */
+    border-radius: 30px;
+}
+.buttR{
+    width: 180px;
+    height: 30px;
+    margin-top: 20px;
+    background-color: rgb(216, 184, 125);
+    border-radius: 30px;
+}
+.res{
+    width: 150px;
+    height: 30px;
+    background-color: white;
+    color: black;
+    
+}
+

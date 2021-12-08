@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <nav class="navigation">
+        <img src="img/img1.png" alt="" width="" height="315px">
+        <button onclick="start()" class="start">Поприветствовать</button>
+        
+    </nav>
+    <main class="content">
+        <ul class="list">
+            <li>qwer</li>
+            <li>qwer</li>
+            <li>qwer</li>
+            <li>qwer</li>
+            <li>qwer</li>
+            <li>qwer</li>
+        </ul>
+        
+        <div class="calc">
+            <input class="num1" type="text">
+            <div class="operationButt">
+                <button class="butt" onclick="op='+'" id="plus">+</button>
+                <button class="butt" onclick="op='-'" id="minus">-</button>
+                <button class="butt" onclick="op='*'" id="multiply">*</button>
+                <button class="butt" onclick="op='/'" id="divide">/</button>
+            </div>
+            <input class="num2" type="text">
+            <button class="buttR" onclick="func()" id="result">=</button>
+            <p id="result"></p>
+        </div>  
+    </main>
+    <script src="js.js"></script>
+</body>
+</html>
