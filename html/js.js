@@ -36,7 +36,8 @@ function func(){
           result = num1 / num2;
           break;
       
-          document.getElementById("result").innerHTML = result;
+          document.getElementById("result").innerHTML = result; 
+//             не отрабатывавет, не могу понять где ошибка
 
 
     }
