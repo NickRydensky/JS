@@ -42,3 +42,21 @@ function func(){
 
     }
 }
+
+// onst hotel = {
+//   name: 'У Ашота',
+//   stars: 3,
+//   capacity: 30,
+// }
+// console.log(hotel)
+
+// const hotels = [hotel]
+
+// console.log(hotels)
+// const hotel1 = {
+//   name:'У Вазгена',
+//   stars: 4,
+//   capacity: 100,
+// }
+// hotels.push(hotel1)
+// console.log(hotels)
