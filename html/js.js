@@ -12,8 +12,7 @@ if(hi){
     }
 }
 else{
-    alert('как хочешь') // Как отсюда передать значение переменной name, что бы его использовать дальше?? или из-за того, что она объявлена внутри функции, снаружи он недоступна
-    // TODO да правильно рассуждаешь область видимости почитай вот тут https://metanit.com/web/javascript/3.2.php
+    alert('как хочешь') //Область видимости посмотрю
 
 }
 }
@@ -21,9 +20,8 @@ let op;
 function func(){
     let result;
 
-    let num1 = Number(document.getElementById('num1').value);
-    let num2 = Number(document.getElementById('num2').value);
-    console.log(op, "op", num1, num2);
+    let num1 = Number(document.getElementById('num1'));
+    let num2 = Number(document.getElementById('num2'));
     switch (op) {
         case '+':
           result = num1 + num2;
@@ -37,19 +35,32 @@ function func(){
         case '/':
           result = num1 / num2;
           break;
-
-///          document.getElementById("result").innerHTML = result;
-//             не отрабатывавет, не могу понять где ошибка
-
-// TODO оно никогда не исполниться так как ты внутри switch делаешь
-
-
     }
-    // TODO вынес их switch
-    document.getElementById("result").innerHTML = result;
-}
+    document.getElementById("result").innerHTML = result; } // Теперь в результате получаю NaN пытался привести к числу, но не понимаю что не получается...
 
-// onst hotel = {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+// const hotel = {
 //   name: 'У Ашота',
 //   stars: 3,
 //   capacity: 30,
@@ -66,3 +77,4 @@ function func(){
 // }
 // hotels.push(hotel1)
 // console.log(hotels)
+  
