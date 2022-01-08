@@ -8,11 +8,11 @@
     <title>Document</title>
 </head>
 <body>
-
+    
     <nav class="navigation">
         <img src="img/img1.png" alt="" width="" height="315px">
         <button onclick="start()" class="start">Поприветствовать</button>
-
+        
     </nav>
     <main class="content">
         <ul class="list">
@@ -23,23 +23,22 @@
             <li>qwer</li>
             <li>qwer</li>
         </ul>
-
+        <div class="secondary">
         <div class="calc">
             <input class="num1" type="text" id="num1">
-            <!-- TODO если обращаешься по getElementById то должен быть id -->
             <div class="operationButt">
                 <button class="butt" onclick="op='+'" id="plus">+</button>
                 <button class="butt" onclick="op='-'" id="minus">-</button>
                 <button class="butt" onclick="op='*'" id="multiply">*</button>
                 <button class="butt" onclick="op='/'" id="divide">/</button>
-                <!-- TODO не лучшая практика так делать op может и не быть -->
             </div>
             <input class="num2" type="text" id="num2">
-            <button class="buttR" onclick="func()" id="result2">=</button>
-            <!-- TODO 2 раза id="result" так нельзя он на то и id - должен быть уникальным -->
+            <button class="buttR" onclick="func()" id="result2">=</button>   <!-- понял, хотел по id достучаться а сам id не присвоил, протупил.  -->
+          
             <p id="result"></p>
-        </div>
+        </div>  
+            </div>
     </main>
     <script src="js.js"></script>
 </body>
-</html>
+<etmh>

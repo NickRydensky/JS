@@ -51,6 +51,17 @@
     border: 2px solid rgb(112, 164, 177);
     transition-duration: 0.5s;
 }
+.secondary{
+    display: flex;
+    
+}
+.pagi{
+    margin-top: 50px;
+    width: 170px;
+    height: 60px;
+    background-color: aqua;
+    border-radius: 30px;
+}
 .calc{
     width: 200px;
     height: 400px;
@@ -92,4 +103,5 @@
     color: black;
     
 }
+
 
