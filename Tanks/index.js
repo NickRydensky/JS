@@ -35,4 +35,4 @@ function draw(){
 
 
 let fps = 30;
-setInterval(draw, 1000/fps);
+setInterval(draw, 1000/fps); // https://learn.javascript.ru/settimeout-setinterval
