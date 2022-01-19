@@ -15,20 +15,34 @@ function cub(x, y, color = 'blue')
 
 let colors = ['red', 'blue', 'green'];
 
+let map = [
+    [0, 1, 0, 0, 1], //5 кубов по ширине где 0 - не рисуем куб, 1 - рисуем
+    [0, 1, 0, 0, 1], //5 кубов по ширине где 0 - не рисуем куб, 1 - рисуем
+    [0, 1, 0, 0, 1], //5 кубов по ширине где 0 - не рисуем куб, 1 - рисуем
+    [0, 1, 0, 0, 1], //5 кубов по ширине где 0 - не рисуем куб, 1 - рисуем
+    [0, 1, 0, 0, 1], //5 кубов по ширине где 0 - не рисуем куб, 1 - рисуем
+]
+
+
 function draw(){
-
-    let color = colors[randomIntFromInterval(0, 3)]
-
-    let firstRow = 50;
-
     ctx.clearRect(0,0, canv.width, canv.height); //стираем нарисованое до этого
-    cub(randomIntFromInterval(firstRow, canv.width - 50), randomIntFromInterval(0, canv.height - 50), color)
 
-    cub(0, 0, 'black');
+    let h = map.length; // получаем высоту размера карты
 
-    for (var i = 0; i < canv.height; i += firstRow)
+    for(var i = 0; i < h; i++) // цикл рисование по высоте
     {
-        cub(0, i)
+        let w = map[i].length // получаем ширину размера карты,
+
+        for(var j = 0; j < w; j++)
+        {
+            let isRect = map[i][j];
+            if(isRect === 1){ // если там есть 1 то рисуем
+                let x = 50 * i;
+                let y = 50 * j;
+                cub(x, y, 'red');
+                console.log(x, y);
+            }
+        }
     }
 }
 
