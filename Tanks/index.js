@@ -16,9 +16,9 @@ function cub(x, y, color = 'blue')
 
 let colors = ['red', 'blue', 'green'];
 
-function fps(){
+function draw(){
     let color = colors[randomIntFromInterval(0, 3)]
     cub(randomIntFromInterval(0, canv.width - 50), randomIntFromInterval(0, canv.height - 50), color)
 }
-
-setInterval(fps, 1000/30);
+let fps = 30;
+setInterval(draw, 1000/fps);
