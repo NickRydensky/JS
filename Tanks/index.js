@@ -19,12 +19,14 @@ function draw(){
 
     let color = colors[randomIntFromInterval(0, 3)]
 
+    let firstRow = 50;
+
     ctx.clearRect(0,0, canv.width, canv.height); //стираем нарисованое до этого
-    cub(randomIntFromInterval(0, canv.width - 50), randomIntFromInterval(0, canv.height - 50), color)
+    cub(randomIntFromInterval(firstRow, canv.width - 50), randomIntFromInterval(0, canv.height - 50), color)
 
     cub(0, 0, 'black');
 
-    for (var i = 0; i < canv.height; i += 50) //50 по высоте
+    for (var i = 0; i < canv.height; i += firstRow)
     {
         cub(0, i)
     }
