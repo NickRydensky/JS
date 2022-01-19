@@ -37,8 +37,8 @@ function draw(){
         {
             let isRect = map[i][j];
             if(isRect === 1){ // если там есть 1 то рисуем
-                let x = 50 * i;
-                let y = 50 * j;
+                let x = 50 * j;
+                let y = 50 * i;
                 cub(x, y, 'red');
                 console.log(x, y);
             }
